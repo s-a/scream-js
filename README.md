@@ -1,6 +1,8 @@
 scream-js Image Server 
 ======================
  
+beta
+
 Overview
 ========
 
@@ -10,11 +12,7 @@ Installation
 ============
 
 Download the tarball from https://github.com/s-a/scream-js/archive/master.zip  
-
-The shorter way of doing this is:  
-
-#### Linux / Mac / Windows
-`git clone https://github.com/s-a/scream-js.git`
+or use `git clone https://github.com/s-a/scream-js.git`
 
 
 Dependencies
@@ -23,7 +21,7 @@ Dependencies
 ***Be shure the commands `convert`, `indentify` and `optipng` are in PATH of your machine.***
 
 #### Windows
-- ImageMagick:   <http://www.imagemagick.org/> 
+- ImageMagick: 	<http://www.imagemagick.org/> 
 - OptiPNG: 		<http://optipng.sourceforge.net/> 
 
 #### Linux  
@@ -46,7 +44,6 @@ First you need to setup a Virtual Image Directory. VID settings are stored withi
 
 #### Start a build for deployment server  
 `node www-test/server.js ./www-root-images/scream-config.js build`
-Before this step it is maybe necessary to cleanup direcories to avoid dead images and css files. I suggest to do this manually to avoid that files will not accidentally deleted. 
 
 Virtual Image Directory setup
 =============================
@@ -108,13 +105,12 @@ var config = {
 module.exports = config;
 ```
 
-Todo
-====
-- productive media queries
-- cleanup output folders on build
+Roadmap
+=======
 - optional usage of imports in CSS files.
-- watch virtual image directory and images for changes  
-Currently it is necessary to restart the server after changes of VID module file or containing images. This will change in future.
+- minify CSS output in non test mode.
+- watch virtual image directory and images for changes.
+Currently it is necessary to restart the server after changes of VID module file or containing images. This will change in soon.
 
 
 Licenses
@@ -129,7 +125,7 @@ This license costs 210€.
 
 ***Enterprise License***  
 Allows you to use scream.js on an unlimited number of workstations 
-on the condition that all of them are developed by one company. 
+on the condition that all of them are used by one company. 
 This license costs 660€.  
 
 How to purchase for your company?

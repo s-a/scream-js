@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>scream-js tests</title>
+</head>
+  <body id="scream__test__status"> 
+ 
+  </body>
+  <script type="text/javascript">
+    var body = document.getElementById("scream__test__status");
+    var testEvents = 
+    
+    (function(w, e){ 
+      if ( w.addEventListener ){
+        w.addEventListener(  'load', e.onLoad, false);
+        w.addEventListener(  'unload', e.onUnload, false);
+      }
+      if ( w.attachEvent ){
+        w.attachEvent('onload', e.onLoad, false);      
+        w.attachEvent('onunload', e.onUnload, false);
+      }
+    }(
+        window.open("test.html","testWindow"), 
+        {
+          onLoad : function () {
+            body.innerHTML = "Testing...";
+          },
+          onUnload : function() {
+            body.innerHTML = "Tests done.";
+          }
+        }
+    ));
+  </script>
+</html>
