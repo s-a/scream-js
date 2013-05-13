@@ -1,0 +1,14 @@
+.scream__test__image{
+ 
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: #E1A60A;
+    border-bottom-color: #E1A60A;
+    margin: 8px 0;
+    
+} 
+
+.scream__test__sprite___item{
+	border: solid 1px #000; 
+
+}

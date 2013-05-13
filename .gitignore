@@ -1,4 +1,3 @@
-/www-test/www-root-dev/assets/images/
-/www-test/www-root-dev/assets/css/*
-/www-test/www-root-dev/assets/css/scream.css
-/lib/exceptions.log
+/www-test/www-root-dev/assets/images/scream/
+/www-test/www-root-dev/assets/css/scream/*.css
+*.log
