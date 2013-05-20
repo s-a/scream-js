@@ -49,11 +49,11 @@ var config = {
 				'-resize', 'x32'							// -size width[xheight][+offset] 
 			]
 		},
-		"brand-nodejs-sketch-64.png" : {		// alias
+		"brand-nodejs-sketch-64.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
-				'-resize', 'x64',							// -size width[xheight][+offset] 
-				'-charcoal', '5'
+				'-charcoal', '5',
+				'-resize', 'x64'							// -size width[xheight][+offset] 
 			],
 			sprite: "gui-background"
 		}
