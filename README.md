@@ -109,8 +109,8 @@ Roadmap
 =======
 - optional usage of imports in CSS files.
 - minify CSS output in non test mode.
-- watch virtual image directory and images for changes.
-Currently it is necessary to restart the server after changes of VID module file or containing images. This will change in soon.
+- partial rebuild.
+Currently Scream.js rebuilds all components if the VID module changes. This will change soon.
 
 
 Licenses

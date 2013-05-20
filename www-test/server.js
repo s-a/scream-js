@@ -3,15 +3,18 @@
  *
  */  
 
+var path = require("path");
 var scream = require('../lib/main.js'); 
 var configFilename = (process.argv[2] === undefined ? __dirname + "/www-root-images/scream-config.js" : process.argv[2]);
+configFilename = path.resolve(path.join(__dirname, configFilename)) ;
 var screamConfig = require(configFilename);
 screamConfig.filename = configFilename; 
+ 
 var testMode = (process.argv[3] === "test" || process.argv[3] === undefined);
 var build = (process.argv[3] === "build");
 var port = (process.argv[4] || 8080);
 var modeString = (testMode ? " [in testMode]" : " [in normalMode]");
-var imageServer = new scream(screamConfig, testMode);
+var imageServer = new scream(screamConfig, testMode, configFilename);
 
 imageServer.log.info("Using configuration file", configFilename);
 if (build){
@@ -19,8 +22,7 @@ if (build){
     imageServer.build(function(){
         imageServer.log.info("scream.js image service build done.");    
     });
-} else {
- 
+} else { 
 	imageServer.run(port, function() { 
 		imageServer.log.info("scream.js image service listening in" + modeString);    
 	});
