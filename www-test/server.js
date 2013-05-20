@@ -5,7 +5,8 @@
 var express = require('express');
 var scream = require('../lib/main.js'); 
 var configFilename = (process.argv[2] === undefined ? __dirname + "/www-root-images/scream-config.js" : process.argv[2]);
-var screamConfig = require(configFilename); 
+var screamConfig = require(configFilename);
+screamConfig.filename = configFilename; 
 var testMode = (process.argv[3] === "test" || process.argv[3] === undefined);
 var build = (process.argv[3] === "build");
 var port = (process.argv[4] || 8080);

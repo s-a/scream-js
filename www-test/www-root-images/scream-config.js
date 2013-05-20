@@ -13,10 +13,10 @@ var config = {
 		}
 	},
 	images : {
-		"brand-nodejs-32.png" : {							// alias
+		"brand-nodejs-64.png" : {							// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
-				'-resize', 'x32'							// -size width[xheight][+offset]
+				'-resize', 'x64'							// -size width[xheight][+offset]
 			],
 			sprite: "gui-background"						// determines if the image should be included within specified sprite sheet
 		},
@@ -29,10 +29,10 @@ var config = {
 			sprite: "gui-background",						// determines if the image should be included within specified sprite sheet
 			createCssRule: false							// default: true. Determines if scream-js should create a css rule for background-image
 		},
-		"brand-inverted-nodejs-32.png" : {					// alias
+		"brand-inverted-nodejs-64.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
-				'-resize', 'x32',							// -size width[xheight][+offset]
+				'-resize', 'x64',							// -size width[xheight][+offset]
 				'-negate'
 			],
 			sprite: "page-background"						// determines if the image should be included within specified sprite sheet
@@ -48,7 +48,16 @@ var config = {
 				'-draw', 'fill red  gravity south text 0,10 scream.js',
 				'-resize', 'x32'							// -size width[xheight][+offset] 
 			]
+		},
+		"brand-nodejs-sketch-64.png" : {		// alias
+			filename : __dirname + "/brand-nodejs.png",		// original filename
+			batch : [										// image processing shell scripts with paramters
+				'-resize', 'x64',							// -size width[xheight][+offset] 
+				'-charcoal', '5'
+			],
+			sprite: "gui-background"
 		}
+		 
 	}
 };
 

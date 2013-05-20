@@ -1,3 +1,4 @@
 /www-test/www-root-dev/assets/css/scream
 /www-test/www-root-dev/assets/images
 *.log
+*.sublime-*
