@@ -2,7 +2,7 @@
  * Copyright (c) 2013 Stephan Ahlf
  *
  */  
-var express = require('express');
+
 var scream = require('../lib/main.js'); 
 var configFilename = (process.argv[2] === undefined ? __dirname + "/www-root-images/scream-config.js" : process.argv[2]);
 var screamConfig = require(configFilename);
@@ -20,10 +20,8 @@ if (build){
         imageServer.log.info("scream.js image server build done.");    
     });
 } else {
-	var app = express();
-	app.use("/", express.static(__dirname + '/www-root-dev/'));
-	imageServer.run(app, function() {
-		app.listen(port);
+ 
+ 	imageServer.run(function() { 
 		imageServer.log.info("scream.js image server listening at http://localhost:"+ port + modeString);    
 	});
 }

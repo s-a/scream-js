@@ -1,4 +1,4 @@
-var config = {
+ var config = {
 	supportedPixelRatios : [1, 1.3, 1.5, 2, 2.1, 3],
 	spriteSheetPrefix : "sprite__",							// prefix of spritesheet filenames and classnames
 	settings : {
@@ -17,7 +17,7 @@ var config = {
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
 				'-resize', 'x64'							// -size width[xheight][+offset]
-			],
+				],
 			sprite: "gui-background"						// determines if the image should be included within specified sprite sheet
 		},
 		"brand-grayscale-nodejs-32.png" : {					// alias
@@ -25,7 +25,7 @@ var config = {
 			batch : [										// image processing shell scripts with paramters
 				'-resize', 'x32',							// -size width[xheight][+offset]
 				'-colorspace', 'Gray'
-			],
+				],
 			sprite: "gui-background",						// determines if the image should be included within specified sprite sheet
 			createCssRule: false							// default: true. Determines if scream-js should create a css rule for background-image
 		},
@@ -34,31 +34,31 @@ var config = {
 			batch : [										// image processing shell scripts with paramters
 				'-resize', 'x64',							// -size width[xheight][+offset]
 				'-negate'
-			],
+				],
 			sprite: "page-background"						// determines if the image should be included within specified sprite sheet
 		},
 		"brand-inverted-watermarked-nodejs-32.png" : {		// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
-				'-negate',
-				'-colorspace', 'Gray',
-				'-font', 'Arial', '-pointsize', '41' ,
-				'-draw', 'fill #282828  gravity south text 0,11 scream.js',
-				'-font', 'Arial', '-pointsize', '40' ,
-				'-draw', 'fill red  gravity south text 0,10 scream.js',
+			'-negate',
+			'-colorspace', 'Gray',
+			'-font', 'Arial', '-pointsize', '41' ,
+			'-draw', 'fill #282828  gravity south text 0,11 scream.js',
+			'-font', 'Arial', '-pointsize', '40' ,
+			'-draw', 'fill red  gravity south text 0,10 scream.js',
 				'-resize', 'x32'							// -size width[xheight][+offset] 
-			]
-		},
+				]
+			},
 		"brand-nodejs-sketch-64.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
-				'-charcoal', '5',
+			'-charcoal', '5',
 				'-resize', 'x64'							// -size width[xheight][+offset] 
-			],
-			sprite: "gui-background"
-		}
-		 
-	}
-};
+				],
+				sprite: "gui-background"
+			}
 
-module.exports = config;
+		}
+	};
+
+	module.exports = config;
