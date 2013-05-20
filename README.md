@@ -8,6 +8,10 @@ Overview
 
 To get an overview read http://saquery.com/scream-js-image-server-based-on-node-js
 
+Preview
+========
+ http://youtu.be/PWEl2Onearw
+
 Installation
 ============
 
