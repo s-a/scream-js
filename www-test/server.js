@@ -15,14 +15,14 @@ var imageServer = new scream(screamConfig, testMode);
 
 imageServer.log.info("Using configuration file", configFilename);
 if (build){
-	imageServer.log.info("scream.js image server build started.");    
+	imageServer.log.info("scream.js image service build started.");    
     imageServer.build(function(){
-        imageServer.log.info("scream.js image server build done.");    
+        imageServer.log.info("scream.js image service build done.");    
     });
 } else {
  
- 	imageServer.run(function() { 
-		imageServer.log.info("scream.js image server listening at http://localhost:"+ port + modeString);    
+	imageServer.run(port, function() { 
+		imageServer.log.info("scream.js image service listening in" + modeString);    
 	});
 }
  

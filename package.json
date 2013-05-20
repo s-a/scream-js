@@ -1,7 +1,7 @@
 {
   "author": "Stephan Ahlf",
   "name": "scream-js",
-  "description": "Simple Image Server",
+  "description": "CSS3 Image Service",
   "version": "0.0.1",
   "repository": {
     "type": "git",

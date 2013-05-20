@@ -1,4 +1,4 @@
-scream-js Image Server 
+scream-js Image Service 
 ======================
  
 beta
@@ -130,4 +130,4 @@ This license costs 660€.
 
 How to purchase for your company?
 =================================
-To purchase Scream-js Image Server send an E-Mail to purchase-scream-js@ahlf-it.de. Specify the ***license type*** and your ***company name*** and ***address*** in topic or mail text.
+To purchase Scream-js Image Service send an E-Mail to purchase-scream-js@ahlf-it.de. Specify the ***license type*** and your ***company name*** and ***address*** in topic or mail text.
