@@ -42,12 +42,8 @@
 			batch : [										// image processing shell scripts with paramters
 			'-negate',
 			'-colorspace', 'Gray',
-			'-font', 'Arial', '-pointsize', '41' ,
-			'-draw', 'fill #282828  gravity south text 0,11 scream.js',
-			'-font', 'Arial', '-pointsize', '40' ,
-			'-draw', 'fill red  gravity south text 0,10 scream.js',
-				'-resize', 'x32'							// -size width[xheight][+offset] 
-				]
+			'-resize', 'x32'							// -size width[xheight][+offset] 
+			]
 			},
 		"brand-nodejs-sketch-64.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
