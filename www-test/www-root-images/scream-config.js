@@ -20,7 +20,7 @@
 				],
 			sprite: "gui-background"						// determines if the image should be included within specified sprite sheet
 		},
-		"brand-grayscale-nodejs-42.png" : {					// alias
+		"brand-grayscale-nodejs-32.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
 				'-resize', 'x32',							// -size width[xheight][+offset]
@@ -51,7 +51,7 @@
 			'-charcoal', '5',
 				'-resize', 'x64'							// -size width[xheight][+offset] 
 				],
-				sprite: "gui-background_"
+				sprite: "gui-background"
 			}
 
 		}
