@@ -1,5 +1,5 @@
  var config = {
-	supportedPixelRatios : [1, 1.3, 1.5, 2, 2.1, 3],
+	supportedPixelRatios : [1, 1.3, 1.5, 2, 2.1],
 	spriteSheetPrefix : "sprite__",							// prefix of spritesheet filenames and classnames
 	settings : {
 		images : {
@@ -20,7 +20,7 @@
 				],
 			sprite: "gui-background"						// determines if the image should be included within specified sprite sheet
 		},
-		"brand-grayscale-nodejs-32.png" : {					// alias
+		"brand-grayscale-nodejs-42.png" : {					// alias
 			filename : __dirname + "/brand-nodejs.png",		// original filename
 			batch : [										// image processing shell scripts with paramters
 				'-resize', 'x32',							// -size width[xheight][+offset]
@@ -51,7 +51,7 @@
 			'-charcoal', '5',
 				'-resize', 'x64'							// -size width[xheight][+offset] 
 				],
-				sprite: "gui-background"
+				sprite: "gui-background_"
 			}
 
 		}
