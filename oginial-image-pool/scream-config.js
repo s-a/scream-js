@@ -4,12 +4,12 @@
 	settings : {
 		images : {
 			route : "/assets/images/",
-			targetCacheDirectory : __dirname + "/../www-root-dev/assets/images"
+			targetCacheDirectory : __dirname + "/../www-root/assets/images"
 		},
 		css: {
 			route : "/assets/css/",
 			imageUrl : "../../images/",						// points to the target url of image directory. In this case relative to "/assets/css/{pixelResolution}"
-			targetCacheDirectory : __dirname + "/../www-root-dev/assets/css"
+			targetCacheDirectory : __dirname + "/../www-root/assets/css"
 		}
 	},
 	images : {
