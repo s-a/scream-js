@@ -40,24 +40,21 @@ program.range = program.range || [];
 console.log(' range: %j..%j', program.range[0], program.range[1]);
 console.log(' list: %j', program.list);*/
 console.log(' args: %j', program.args);
-
-if (program.file){
-		console.log('stuff');
-
-}
+ 
 program.parse(process.argv);
 
-
-
-var imageServer = new scream(testMode);
-if (build){
-	imageServer.log.info("scream.js image service build started.");    
-    imageServer.build(function(){
-        imageServer.log.info("scream.js image service build done.");    
-    });
-} else { 
-	imageServer.run(port, function() { 
-		imageServer.log.info("scream.js image service listening in" + modeString);    
-	});
-}
- 
+if (program.args.length === 0){
+	console.log('no parms passed');
+} else {
+	var imageServer = new scream(testMode);
+	if (build){
+		imageServer.log.info("scream.js image service build started.");    
+	    imageServer.build(function(){
+	        imageServer.log.info("scream.js image service build done.");    
+	    });
+	} else { 
+		imageServer.run(port, function() { 
+			imageServer.log.info("scream.js image service listening in" + modeString);    
+		});
+	}
+}	 

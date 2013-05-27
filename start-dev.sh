@@ -1,2 +1,2 @@
 #!/bin/sh
-node www-test/server.js ./www-root-images/scream-config.js test 8000
+node bin/scream www-test/www-root-images/scream-config.js test 
