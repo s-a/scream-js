@@ -41,9 +41,9 @@ Installation
 
 or  
 
-`git clone https://github.com/s-a/scream-js.git`
-`cd scream-js.git`
-`npm install -g`
+`git clone https://github.com/s-a/scream-js.git`  
+`cd scream-js`   
+`npm install -g`  
 
 Usage
 =====
@@ -55,7 +55,7 @@ First you need to setup a Virtual Image Directory. VID settings are stored withi
 `scream oginial-image-pool/scream-config.js`
 
 #### Start a build for deployment server  
-`scream oginial-image-pool/scream-config.js build`
+`scream oginial-image-pool/scream-config.js --build`
 
 Virtual Image Directory setup
 =============================
