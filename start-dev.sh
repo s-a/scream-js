@@ -1,2 +1,2 @@
 #!/bin/sh
-node bin/scream www-test/www-root-images/scream-config.js test 
+node bin/scream oginial-image-pool/scream-config.js test 
