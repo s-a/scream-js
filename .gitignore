@@ -1,5 +1,5 @@
-/www-test/www-root-dev/assets/css/scream
-/www-test/www-root-dev/assets/images
+/www-root/assets/css/scream
+/www-root/assets/images
 *.log
 *.sublime-*
 node_modules
