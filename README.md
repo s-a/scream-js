@@ -12,15 +12,12 @@ Preview
 ========
  http://youtu.be/PWEl2Onearw
 
-Installation
-============
-
-Download the tarball from https://github.com/s-a/scream-js/archive/master.zip  
-or use `git clone https://github.com/s-a/scream-js.git`
-
 
 Dependencies
 ============
+
+#### NodeJs  
+from http://nodejs.org/
 
 ***Be shure the commands `convert`, `indentify` and `optipng` are in PATH of your machine.***
 
@@ -37,17 +34,28 @@ Dependencies
 - OptiPNG: 		`brew install optipng`
 
 
+Installation
+============
+
+`npm install -g scream-js`
+
+or  
+
+`git clone https://github.com/s-a/scream-js.git`
+`cd scream-js.git`
+`npm install -g`
+
 Usage
 =====
 
 First you need to setup a Virtual Image Directory. VID settings are stored within a simple Node.js module.
-[VID module sample](https://github.com/s-a/scream-js/edit/master/www-test/www-root-images/scream-config.js)
+[VID module sample](https://github.com/s-a/scream-js/blob/master/oginial-image-pool/scream-config.js)
 
 #### Start a development server  
-`node www-test/server.js ./www-root-images/scream-config.js test 8000`
+`scream oginial-image-pool/scream-config.js`
 
 #### Start a build for deployment server  
-`node www-test/server.js ./www-root-images/scream-config.js build`
+`scream oginial-image-pool/scream-config.js build`
 
 Virtual Image Directory setup
 =============================
