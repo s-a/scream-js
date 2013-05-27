@@ -1,5 +1,5 @@
 {
-  "author": "Stephan Ahlf",
+  "author": "Stephan Ahlf <stephan@ahlf-it.de> (http://www.ahlt-it.de/)",
   "preferGlobal": true,
   "name": "scream-js",
   "description": "CSS3 Image Service",
@@ -7,6 +7,20 @@
     "scream": "./bin/scream.js"
   },
   "version": "0.1.1",
+  "licenses" : [
+    { 
+        "type" : "Open Source- GPL", 
+        "url" : "https://github.com/s-a/scream-js#licenses"
+    },
+    { 
+        "type" : "Commercial License", 
+        "url" : "https://github.com/s-a/scream-js#licenses"
+    },
+    { 
+        "type" : "Enterprise License", 
+        "url" : "https://github.com/s-a/scream-js#licenses"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/s-a/scream-js.git"
