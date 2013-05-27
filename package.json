@@ -1,8 +1,12 @@
 {
   "author": "Stephan Ahlf",
+  "preferGlobal": true,
   "name": "scream-js",
   "description": "CSS3 Image Service",
-  "version": "0.0.1",
+  "bin": {
+    "scream": "./bin/scream.js"
+  },
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/s-a/scream-js.git"
@@ -16,7 +20,9 @@
   },
   "dependencies": {
     "winston": "",
-    "deep-diff": ""
+    "deep-diff": "",
+    "underscore": "",
+    "commander":""
   },
   "devDependencies": {
     "mocha": "",

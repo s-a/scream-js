@@ -2,3 +2,4 @@
 /www-test/www-root-dev/assets/images
 *.log
 *.sublime-*
+node_modules
