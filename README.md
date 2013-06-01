@@ -51,6 +51,24 @@ Usage
 First you need to setup a Virtual Image Directory. VID settings are stored within a simple Node.js module.
 [VID module sample](https://github.com/s-a/scream-js/blob/master/oginial-image-pool/scream-config.js)
 
+To initialize from scratch with all images in a special folder goto the folder and type  
+`scream --init folder_path --size=x64 [sprite=SPRITENAME]`
+The init script needs an initial image size in form of [maxheight]x[maxWidth]. Optional you can pass an Sprite Sheet ID to bundle all images in a Sprite Sheet.
+`scream --init . --size=x64 sprite=sprite`
+
+`scream --help`
+`Usage: scream.js sream <virutal image directory [file] ...> [options]`  
+    
+`Options:`  
+
+`	-h, --help            output usage information`  
+`	-V, --version         output the version number`  
+`	-b, --build           Build virtual image directory`  
+`	-i, --init [dir]      Initialize from current or given directory`  
+`	-s, --sprite [value]  used with ---init`  
+`	-z, --size [value]    used with ---init ; [height]x[width]`  
+
+
 #### Start a development server  
 `scream oginial-image-pool/scream-config.js`
 

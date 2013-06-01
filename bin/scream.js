@@ -106,6 +106,7 @@ if (program.init){
 				imageServer.log.info("scream.js image service build done.");    
 			});
 		} else { 
+			imageServer.log.info("scream.js image service development build started.");    
 			imageServer.run(port, function() { 
 				imageServer.log.info("scream.js image service listening in" + modeString);    
 			});
