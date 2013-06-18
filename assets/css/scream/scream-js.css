@@ -1,0 +1,22 @@
+/* Generator: Scream.js <http://goo.gl/K4tmr> Copyright 2013 AHLF|IT */
+.dragonfly{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url("../../images/scream/dragonfly.png");
+	background-size: 602px 400px;
+	width: 602px;
+	height: 400px;
+}
+
+.test-dragonfly{
+	width: 602px;
+	height: 400px;
+	background-size: 602px;
+	background-position:0 -0px;
+}
+
+.test-dragonfly{
+	background-image: url("../../images/scream/sprite__test.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+}

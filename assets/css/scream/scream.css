@@ -1,0 +1,41 @@
+/* Generator: Scream.js <http://goo.gl/K4tmr> Copyright 2013 AHLF|IT */
+@import url("scream-js.css");
+@import url("scream-js@1-3x.css") 
+only screen and (-webkit-min-device-pixel-ratio: 1.3),
+only screen and (min--moz-device-pixel-ratio: 1.3),
+only screen and (-o-min-device-pixel-ratio: 1 3/10),
+only screen and (min-device-pixel-ratio: 1.3),
+only screen and (min-resolution: 124.80000000000001dpi),
+only screen and (min-resolution: 1.3dppx);
+
+@import url("scream-js@1-5x.css") 
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 1 1/2),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.5dppx);
+
+@import url("scream-js@2x.css") 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx);
+
+@import url("scream-js@2-1x.css") 
+only screen and (-webkit-min-device-pixel-ratio: 2.1),
+only screen and (min--moz-device-pixel-ratio: 2.1),
+only screen and (-o-min-device-pixel-ratio: 2 1/10),
+only screen and (min-device-pixel-ratio: 2.1),
+only screen and (min-resolution: 201.60000000000002dpi),
+only screen and (min-resolution: 2.1dppx);
+
+@import url("scream-js@3x.css") 
+only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3),
+only screen and (min-resolution: 288dpi),
+only screen and (min-resolution: 3dppx);
