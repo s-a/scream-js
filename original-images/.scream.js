@@ -13,11 +13,11 @@ var config = {
 		}
 	},
 	images : {	
-		"dragonfly.png" : {										// alias
-			filename : __dirname + "/dragonfly-122794.png",		// original filename
+		"test.png" : {										// alias
+			filename : __dirname + "/architecture-139533.png",		// original filename
 			sprite: "test",										// determines if the image should be included within specified sprite sheet
 			batch : [											// image processing shell scripts with paramters
-				"-resize", "x400"								// -size width[xheight][+offset]
+				"-resize", "x150"								// -size width[xheight][+offset]
 			]
 		} 
 	}

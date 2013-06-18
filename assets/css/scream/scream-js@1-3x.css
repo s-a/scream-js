@@ -1,18 +1,18 @@
 /* Generator: Scream.js <http://goo.gl/K4tmr> Copyright 2013 AHLF|IT */
-.dragonfly{
+.test{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: url("../../images/scream/dragonfly@1-3x.png");
+	background-image: url("../../images/scream/test@1-3x.png");
 }
 
-.test-dragonfly{
-	width: 602px;
-	height: 400px;
-	background-size: 602px;
+.test-test{
+	width: 150px;
+	height: 150px;
+	background-size: 150px;
 	background-position:0 -0px;
 }
 
-.test-dragonfly{
+.test-test{
 	background-image: url("../../images/scream/sprite__test@1-3x.png");
 	background-repeat: no-repeat;
 	display: inline-block;

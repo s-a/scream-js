@@ -13,38 +13,54 @@
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!-- Fav and touch icons --> 
   <style type="text/css">
-    .pixel-ratio-1-dragonfly{
+    .pixel-ratio-1-test-image{
       display: inline-block;
       background-repeat: no-repeat;
-      background-image: url("assets/images/scream/dragonfly.png");
-      background-size: 600px 400px;
-      width: 600px;
-      height: 400px;
+      background-image: url("assets/images/scream/test.png");
+      background-size: 150px 150px;
+      width: 150px;
+      height: 150px;
     }
 
-    .container{
+    div.container{
       float: left;
+      width: 150px;
+      border-right: solid 1px #000; 
     }
+
+    .info{
+      font-style: italic;
+      height: 70px;
+      overflow: auto;
+      padding: 11px;
+    }
+
+    .title{
+      font-weight: bold;
+      height: 50px;
+      padding: 11px;
+    }
+ 
   </style>
 </head>
 <body> 
   <p>Created with <a href="https://github.com/s-a/scream-js">https://github.com/s-a/scream-js</a></p>
-  <p>Image by <a href="http://pixabay.com/en/dragonfly-macro-insect-water-see-122794/" target="_blank">pixabay.com</a></p>  
+  <p>Image by <a href="http://pixabay.com/en/architecture-design-plant-drawing-139533/" target="_blank">pixabay.com</a></p>  
   <p>
     <div class="container">
-      Image when pixel ratio of device is "1"
-      <div class="img pixel-ratio-1-dragonfly"></div>
+      <div class="title">Image when pixel ratio of device is "1"</div>
+      <div class="img pixel-ratio-1-test-image"></div>
     </div>
     <div class="container">
-      Dynamic image by pixel ratio of current device (<span id="pr">...</span>)
-      <div class="img dragonfly"></div>
+      <div class="title">Dynamic image by pixel ratio of current device (<span id="pr">...</span>)</div>
+      <div class="img test"></div>
     </div>
   </p>
 
   <script type="text/javascript">
     $(function() {
       $(".img").each(function() {
-        $("<div> " + $(this).css("background-image") + "</div>").insertBefore(this);
+        $("<div class=\"info\"> " + $(this).css("background-image") + "</div>").insertBefore(this);
       });
       $("#pr").html(window.devicePixelRatio);
     });
