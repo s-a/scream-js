@@ -8,8 +8,14 @@ Overview
 
 To get an overview read http://saquery.com/scream-js-image-server-based-on-node-js
 
-Preview
-========
+Demo
+====
+Since [Reyncor](https://github.com/Reyncor) mentioned there is an online demo available at http://s-a.github.io/scream-js/.  
+![Android smartphone device screenshot](http://saquery.com/blg/wp-content/uploads/2013_06_18_10.30.49.png "Screenshot of online demo with Samsung SG II")
+
+
+Workflow video
+==============
  http://youtu.be/PWEl2Onearw
 
 
