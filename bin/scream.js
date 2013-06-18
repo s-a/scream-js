@@ -56,7 +56,7 @@ if (program.init){
 
 	fs.readdirSync(p).forEach(function(file) {
 		var ext =  ScreamIO.file.extractFileExtension(file).toLowerCase();
-		if (ext === ".png") {
+		if (ext === ".png" || ext === ".jpg" || ext === ".jpeg") {
 			foundFiles.push(file);
 		}
 	});
