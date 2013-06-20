@@ -26,7 +26,6 @@
     "url": "https://github.com/s-a/scream-js.git"
   }, 
   "main": "lib/main",
-  "before_script": "sudo apt-get install optipng",
   "scripts": {
     "test": "mocha test"
   },
