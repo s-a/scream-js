@@ -1,26 +1,31 @@
 
 var ScreamProcess = require('./../lib/scream-process');
-
-before(function(){
-  //TODO seed the database
-});
-
+require('should');
 
 describe('Environment',function(){
 
-  beforeEach(function(){
-    //todo log in test user
+  it('should find convert command', function(done){
+    var proc = new ScreamProcess("convert");
+    proc.execute(null, function(cmd, exitCode) {
+      exitCode.should.equal(0);
+      done();
+    });
   });
-  
-  it('scream --validate', function(done){
-  	 
-	var proc = new ScreamProcess("node");
 
-	proc.execute(["./../bin/scream.js","--validate"], function(cmd, exitCode) {
-		exitCode.should.equal(0);
-	  	done();
-	});
+  it('should find identify command', function(done){
+    var proc = new ScreamProcess("identify");
+    proc.execute(null, function(cmd, exitCode) {
+      exitCode.should.equal(0);
+      done();
+    });
+  });
 
+  it('should find optipng command', function(done){
+    var proc = new ScreamProcess("optipng");
+    proc.execute(null, function(cmd, exitCode) {
+      exitCode.should.equal(0);
+      done();
+    });
   });
 
 });

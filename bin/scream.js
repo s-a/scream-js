@@ -26,39 +26,11 @@ program
   .parse(process.argv);
 
 
-var validateBinary = function(name, callback) {
-	var proc = new ScreamProcess(name);
 
-	proc.execute(null, function(cmd, exitCode) {
-		if (exitCode === 0){ 
-			console.log
-			(cmd, "exits with", exitCode);
-			callback();
-		} else {
-			console.log("Environment tests failed");
-			process.exit(1);
-		}
-	});
-}
 
 if (program.validate){
-
-        try{
-		    console.log("Testing environment...");
-		    validateBinary("convert", function() {
-			    validateBinary("identify", function() {
-				    validateBinary("optipng", function() {
-				    	console.log("Environment tests done");
-				    });
-			    });
-		    });
-        } catch(err) {
-			console.log("Environment tests failed");
-			process.exit(1);
-        }
-
-
-
+	var cmd = "\"npm test " + path.join(__dirname,  "../") + "\"";
+	console.log("Execute", cmd, "to run all test suites");
 } else if (program.init){
 
 	if (typeof program.size !== "string"){
