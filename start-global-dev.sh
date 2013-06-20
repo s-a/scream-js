@@ -1,2 +1,2 @@
 #!/bin/sh
-scream oginial-image-pool/scream-config.js
+scream original-image-pool/scream-config.js
