@@ -1,7 +1,9 @@
 scream-js Image Service 
 ======================
  
-beta
+beta  
+<img src="https://travis-ci.org/s-a/scream-js.png" />  
+
 
 Overview
 ========
