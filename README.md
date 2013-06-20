@@ -3,7 +3,7 @@ scream-js Image Service
  
 beta  
 <img src="https://travis-ci.org/s-a/scream-js.png" />  
-
+[Build history](https://travis-ci.org/s-a/scream-js)  
 
 Overview
 ========
