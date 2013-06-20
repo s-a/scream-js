@@ -13,6 +13,7 @@ var program = require('commander');
 var fs = require('fs');
 var path = require('path');
 var ScreamIO = require('./../lib/scream-io');
+var ScreamProcess = require('./../lib/scream-process');
 
 program
   .version(require("../package.json").version)
@@ -21,10 +22,44 @@ program
   .option('-i, --init [dir]', 'Initialize from current or given directory')
   .option('-s, --sprite [value]', 'used with ---init')
   .option('-z, --size [value]', 'used with ---init ; [height]x[width]')
+  .option('-v, --validate', 'Validate system requirements')
   .parse(process.argv);
 
 
-if (program.init){
+var validateBinary = function(name, callback) {
+	var proc = new ScreamProcess(name);
+
+	proc.execute(null, function(cmd, exitCode) {
+		if (exitCode === 0){ 
+			console.log
+			(cmd, "exits with", exitCode);
+			callback();
+		} else {
+			console.log("Environment tests failed");
+			process.exit(1);
+		}
+	});
+}
+
+if (program.validate){
+
+        try{
+		    console.log("Testing environment...");
+		    validateBinary("convert", function() {
+			    validateBinary("identify", function() {
+				    validateBinary("optipng", function() {
+				    	console.log("Environment tests done");
+				    });
+			    });
+		    });
+        } catch(err) {
+			console.log("Environment tests failed");
+			process.exit(1);
+        }
+
+
+
+} else if (program.init){
 
 	if (typeof program.size !== "string"){
 		console.error("Need initial --size parm");

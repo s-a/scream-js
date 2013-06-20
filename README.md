@@ -22,22 +22,28 @@ Workflow video
 Dependencies
 ============
 
-#### NodeJs  
-from http://nodejs.org/
-
-***Be shure the commands `convert`, `indentify` and `optipng` are in PATH of your machine.***
-
 #### Windows
+- Node.js: 		<http://nodejs.org/>
 - ImageMagick: 	<http://www.imagemagick.org/> 
 - OptiPNG: 		<http://optipng.sourceforge.net/> 
 
 #### Linux  
-- imageMagick: 	`sudo apt-get install imagemagick`
-- OptiPNG: 		`sudo apt-get install optipng`
+- Node.js: 		`sudo apt-get install nodejs`
+To install latest Node.js on Ubuntu
+`sudo add-apt-repository ppa:chris-lea/node.js`  
+`sudo apt-get update`  
+`sudo apt-get install nodejs`  
+- imageMagick: 	`sudo apt-get install imagemagick`  
+- OptiPNG: 		`sudo apt-get install optipng`  
 
 #### Mac OS X
+- Node.js: 		<http://nodejs.org/>
 - imageMagick: 	<http://www.imagemagick.org/script/binary-releases.php#macosx>
-- OptiPNG: 		`brew install optipng`
+- OptiPNG: 		`brew install optipng`  
+
+***Be shure the commands `convert`, `indentify` and `optipng` are in PATH of your machine.***
+
+To validate if all system requirements are installed run `scream --validate`
 
 
 Installation
@@ -51,6 +57,7 @@ or
 `cd scream-js`   
 `npm install -g`  
 
+
 Usage
 =====
 
@@ -58,12 +65,12 @@ First you need to setup a Virtual Image Directory. VID settings are stored withi
 [VID module sample](https://github.com/s-a/scream-js/blob/master/oginial-image-pool/scream-config.js)
 
 To initialize from scratch with all images in a special folder goto the folder and type  
-`scream --init folder_path --size=x64 [sprite=SPRITENAME]`
+`scream --init folder_path --size=x64 [--sprite=SPRITENAME]`
 The init script needs an initial image size in form of [maxheight]x[maxWidth]. Optional you can pass an Sprite Sheet ID to bundle all images in a Sprite Sheet.
-`scream --init . --size=x64 sprite=sprite`
+`scream --init . --size=x64 --sprite=sprite`
 
 `scream --help`
-`Usage: scream.js sream <virutal image directory [file] ...> [options]`  
+`Usage: scream.js sream <virtual image directory [file] ...> [options]`  
     
 `Options:`  
 
@@ -73,6 +80,7 @@ The init script needs an initial image size in form of [maxheight]x[maxWidth]. O
 `	-i, --init [dir]      Initialize from current or given directory`  
 `	-s, --sprite [value]  used with ---init`  
 `	-z, --size [value]    used with ---init ; [height]x[width]`  
+`	-v, --validate		  Validate system requirements`  
 
 
 #### Start a development server  

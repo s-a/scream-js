@@ -36,11 +36,11 @@
     "winston": "",
     "deep-diff": "",
     "underscore": "",
-    "commander":""
+    "commander":"",
+    "mocha": "",
+    "should": ""
   },
   "devDependencies": {
-    "mocha": "",
-    "expect.js": "",
     "superagent": ""
   }
 }
