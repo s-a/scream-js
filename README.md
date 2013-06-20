@@ -151,6 +151,14 @@ var config = {
 module.exports = config;
 ```
 
+
+
+
+Tests
+=====
+Execute `scream --validate` to show the test instructions or navigate to scream-js folder and execute 
+`npm test`.  
+
 Roadmap
 =======
 - optional usage of imports in CSS files.

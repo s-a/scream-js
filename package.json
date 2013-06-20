@@ -27,7 +27,7 @@
   }, 
   "main": "lib/main",
   "scripts": {
-    "test": "mocha -R List test"
+    "test": "mocha test"
   },
   "engines": {
     "node": ">=0.8.0"
