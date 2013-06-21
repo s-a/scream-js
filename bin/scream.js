@@ -22,7 +22,7 @@ program
   .option('-i, --init [dir]', 'Initialize from current or given directory')
   .option('-s, --sprite [value]', 'used with ---init')
   .option('-z, --size [value]', 'used with ---init ; [height]x[width]')
-  .option('-v, --validate', 'Validate system requirements')
+  .option('-v, --validate', 'Show test instructions')
   .parse(process.argv);
 
 
