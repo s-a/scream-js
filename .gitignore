@@ -3,3 +3,4 @@
 *.log
 *.sublime-*
 node_modules
+.scream.js
