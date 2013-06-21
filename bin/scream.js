@@ -8,12 +8,11 @@
 var scream = require('../lib/main.js'); 
 var testMode = (process.argv[3] === "test" || process.argv[3] === undefined);
 var port = (process.argv[4] || 8080);
-var modeString = " [in development mode]";
+var modeString = " [development mode]";
 var program = require('commander');
 var fs = require('fs');
 var path = require('path');
 var ScreamIO = require('./../lib/scream-io');
-var ScreamProcess = require('./../lib/scream-process');
 
 program
   .version(require("../package.json").version)
