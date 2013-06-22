@@ -8,7 +8,7 @@ require('should');
 describe('Build process',function(){
 
   it('should build test config', function(done){
-    this.timeout(1000*20);
+    this.timeout(1000*50);
     var cmd = path.join(__dirname, "/../start-build.sh"); 
     var proc = new ScreamProcess("sh");
     proc.execute([cmd], function(cmd, exitCode) {
