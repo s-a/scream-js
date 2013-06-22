@@ -24,12 +24,36 @@ describe('Build process',function(){
       done();
   });
 
-  it('should have created image files', function(done){
-      var img = path.join(__dirname, "/../www-root/assets/images/scream/");
-      ScreamIO.file.exists(path.join(img, "sprite__gui-background.png")).should.be.true;
-      ScreamIO.file.exists(path.join(img, "sprite__page-background.png")).should.be.true;
-      ScreamIO.file.exists(path.join(img, "brand-inverted-watermarked-nodejs-32.png")).should.be.true;
+  var imageFolder = path.join(__dirname, "/../www-root/assets/images/scream/"); 
+  var configFilename = path.join(__dirname, "/../original-image-pool/scream-config.js");
+  var setup = require(configFilename); 
+  delete require.cache[configFilename]; 
+
+  it('should have created sprite image files', function(done){
+      ScreamIO.file.exists(path.join(imageFolder, "sprite__gui-background.png")).should.be.true;
+      ScreamIO.file.exists(path.join(imageFolder, "sprite__page-background.png")).should.be.true;
       done();
   });
+
+  it('should have created non sprite image files', function(done){
+      for (var key in setup.images) {
+        var img = setup.images[key];
+        if (img.sprite === undefined){
+          ScreamIO.file.exists(path.join(imageFolder, key)).should.be.true;          
+        }
+      } 
+      done();
+  });
+
+  it('should have removed sprite bundled image files', function(done){
+      for (var key in setup.images) {
+        var img = setup.images[key];
+        if (img.sprite !== undefined){
+          ScreamIO.file.exists(path.join(imageFolder, key)).should.be.false;
+        }
+      } 
+      done();
+  });
+  
 
 });
