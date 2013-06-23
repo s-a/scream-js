@@ -1,12 +1,18 @@
-scream-js Image Service 
-======================
- 
-beta  
-<img src="https://travis-ci.org/s-a/scream-js.png" />  
-[Build history](https://travis-ci.org/s-a/scream-js)  
+scream-js command line application 
+==================================
+Scream.js integrates resolution detection via media queries. To prevent artifacts, it’s important that images display at native resolution.  To accomplish this, a large number of variations must be created for each screen resolution. Scream.js can solve that by dynamically adjusting the size of images according to the user’s browser system.  
 
-Overview
-========
+
+The software is designed for usage while development. It can be used with any web development environment like PHP, ASP.NET, Node.js, Ruby on Rails, much more and even in static HTML websites. After productive build of your project there are no further server side system requirements necessary and the assets are ready to deploy.  
+
+
+The commandline application supports Microsoft Windows, Mac OS X and Linux.
+ 
+  
+[beta <img src="https://travis-ci.org/s-a/scream-js.png" />](https://travis-ci.org/s-a/scream-js)  
+
+Detailed description
+====================
 
 To get an overview read http://saquery.com/scream-js-image-server-based-on-node-js
 
@@ -16,8 +22,8 @@ Since [Reyncor](https://github.com/Reyncor) mentioned there is an online demo av
 ![Android smartphone device screenshot](http://saquery.com/blg/wp-content/uploads/2013_06_18_10.30.49.png "Screenshot of online demo with Samsung SG II")
 
 
-Workflow video
-==============
+Workflow video ( amateur style :O/ )
+====================================
  http://youtu.be/PWEl2Onearw
 
 
