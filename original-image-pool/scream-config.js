@@ -1,5 +1,5 @@
  var config = {
-	supportedPixelRatios : [1  , 1.3, 1.5, 2, 2.1, 3 ],
+	supportedPixelRatios : [1/*, 1.3, 1.5, 2, 2.1, 3*/],
 	spriteSheetPrefix : "sprite__",							// prefix of spritesheet filenames and classnames
 	settings : {
 		images : {
