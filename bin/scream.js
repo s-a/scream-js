@@ -108,9 +108,7 @@ if (program.validate){
 		var imageServer = new scream(testMode);
 		if (program.build){
 			imageServer.log.info("scream.js image service build started.");    
-			imageServer.build(function(){
-				imageServer.log.info("scream.js image service build done.");    
-			});
+			imageServer.build(imageServer.loadSetup());
 		} else { 
 			imageServer.log.info("scream.js image service development build started.");    
 			imageServer.run(port, function() { 
