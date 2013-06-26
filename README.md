@@ -22,9 +22,9 @@ Since [Reyncor](https://github.com/Reyncor) mentioned there is an online demo av
 ![Android smartphone device screenshot](http://saquery.com/blg/wp-content/uploads/2013_06_18_10.30.49.png "Screenshot of online demo with Samsung SG II")
 
 
-Workflow video ( amateur style :O/ )
-====================================
- http://youtu.be/PWEl2Onearw
+Workflow video
+==============
+http://youtu.be/Jy0cVkfmnA0
 
 
 Dependencies
